@@ -18,7 +18,16 @@ const mentors1: GenericArray<string> = ["X", "Y", "Z"];
 const booleanArr1: GenericArray<boolean> = [true, false, true];
 
 // >----------Generic Object----------------------->
-const userArray: GenericArray<{ name: string; age: number }> = [
+// type UserArray = {
+//   name: string;
+//   age: number;
+// };
+
+interface UserArray {
+  name: string;
+  age: number;
+}
+const userArray: GenericArray<UserArray> = [
   {
     name: "X",
     age: 11,
